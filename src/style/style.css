@@ -3,3 +3,39 @@
     color: red;
     font-weight: bold;
 }
+
+.image{
+    width: 500px;
+    height: 450px;
+}
+
+
+.title{
+    font-size: 128px;
+    font-family: 'Merriweather', serif;
+    text-transform: uppercase;
+}
+
+.conteneur-article-presse{
+    display:flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+
+}
+
+.conteneur-article-presse-texteetbouton{
+    display: flex;
+    flex-direction: column;
+    margin-left: 32px ;
+}
+
+body{
+    background-color: #081051;
+    color: white;
+}
+
+.margin{
+    margin-left: 40px;
+    margin-top: 40px;
+}
