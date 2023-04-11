@@ -12,19 +12,18 @@
 
 .title{
     font-size: 128px;
-    font-family: 'Merriweather', serif;
     text-transform: uppercase;
 }
 
-.conteneur-article-presse{
+.div_article{
     display:flex;
     flex-direction: row;
     width: 100%;
-    justify-content: center;
-
+    max-width: 100vh;
+    padding: 0 240px 0 240px;
 }
 
-.conteneur-article-presse-texteetbouton{
+.div_article_explanation{
     display: flex;
     flex-direction: column;
     margin-left: 32px ;
@@ -33,9 +32,26 @@
 body{
     background-color: #081051;
     color: white;
+    font-family: 'Merriweather', serif;
+    margin: 0;
 }
 
 .margin{
     margin-left: 40px;
     margin-top: 40px;
+}
+
+
+
+/* FOOTER */
+footer{
+    margin: 0;
+    padding: 32px 240px 64px 240px;
+    background-color: #081021;
+}
+footer .listLinks{
+    display: flex;
+}
+.footer-link-li{
+    cursor: pointer;
 }
