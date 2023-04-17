@@ -1,41 +1,101 @@
+/* GLOBAL */
+html{
+  height: 100%;
+}
 body {
   background-color: #081051;
   color: white;
   font-family: "Merriweather", serif;
   margin: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100%;
 }
+.future_icone{
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 1px solid white;
+}
+
 
 /* HEADER */
 header {
   margin: 0;
   display: flex;
+  align-items: center;
+  padding: 1rem 0;
 }
-.imgLogo {
-  width: 8vw;
-  height: 3px;
+.imgLogo{
   background-color: white;
-  margin: 1rem 2rem;
+  width: 12rem;
+  height: 4rem;
+  margin-left: 2%;
 }
 .header_menus {
   width: 100%;
   display: flex;
+  justify-content: flex-end;
+}
+.header_menus nav {
+  padding: 0 2rem 0 0;
 }
 .header_menus nav ul {
   list-style: none;
+  display: flex;
+  align-items: center;
 }
 .header_menus nav ul li {
   display: inline-block;
+  color: white;
+  margin: 0 1rem;
+}
+.header_menus nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+.header_menus nav ul li a, .header_menus nav ul li img, .header_menus nav ul li div {
+  cursor: pointer;
+}
+.header_menus .header_icones{
+  width: 2rem;
+  height: 2rem;
+}
+#store, #instagram{
+  width: fit-content;
+  height: fit-content;
+  display: inline-flex;
 }
 
 /* FOOTER */
 footer {
-  margin: 0;
+  margin: auto 0 0 0;
   padding: 32px 240px 64px 240px;
   background-color: #081021;
 }
-footer .listLinks {
+footer .footer_lists {
   display: flex;
 }
-.footer-link-li {
+footer .footer_lists ul {
+  list-style: none;
+}
+footer .footer_lists ul li{
+  margin: 0.8rem 0;
+}
+footer .footer_lists ul li a{
+  text-decoration: none;
+}
+footer .footer_lists ul li a, footer .footer_lists ul li img, footer .footer_lists ul li div{
   cursor: pointer;
+}
+footer #footer_social_icones{
+  display: inline-flex;
+  align-items: center;
+  margin: 0;
+}
+footer .footer_icones{
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1rem;
 }
