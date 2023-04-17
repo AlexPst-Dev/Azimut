@@ -5,32 +5,37 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>A Basic HTML5 Template</title>
-    <meta name="description" content="A simple HTML5 Template for new projects.">
-    <meta name="author" content="SitePoint">
+    <title>Azimut</title>
+    <meta name="description" content="Azimut à l'Ouest Website">
+    <meta name="author" content="Alexandre PROUST">
 
     <link rel="stylesheet" href="./src/style/style.css">
 
   </head>
 
   <body>
-    <h1>Acceuil</h1>
-    <p class="paragraphe">Mon texte est joli</p>
-    <button onclick="window.location.href='./src/pages/galerie.html'">Galerie</button>
-    <button onclick="window.location.href='./src/pages/presse.html'">Presse</button>
+    
+    <header>
+      <div class="imgLogo"></div>
+      <div class="header_menus">
+        <nav>
+          <ul>
+            <li><a href="./src/pages/galerie.html">Galerie</a></li>
+            <li><a href="./src/pages/presse.html">Presse</a></li>
+            <li><a href="#">Partenaires</a></li>
+            <li><a href="#">Qui sommes-nous ?</a></li>
+            <li id="store"><img src="./src/svg/store.svg" class="header_icones"></img></li>
+            <li id="instagram"><img src="./src/svg/photo_camera.svg" class="header_icones"></img></li>
+            <li><div class="futur_incon"></div></li>
+            <li><div class="futur_incon"></div></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
 
     <footer>
-      <h3>AZIMUT À L'OUEST</h3>
-      <div class="listLinks">
-        <ul class="footer-link-ul" id="footer-leftPart">
-          <li>Galerie</li>
-          <li class="footer-link-li" onclick="window.location.href='./src/pages/presse.html'">Presse</li>
-        </ul>
-        <ul class="footer-link-ul" id="footer-rightPart">
-          <li>Galerie</li>
-          <li class="footer-link-li" onclick="window.location.href='./src/pages/presse.html'">Presse</li>
-        </ul>
-      </div>
+
     </footer>
   </body>
 </html>
