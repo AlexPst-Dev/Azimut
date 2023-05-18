@@ -25,6 +25,7 @@ header {
   display: flex;
   align-items: center;
   padding: 1rem 0;
+  justify-content: space-between;
 }
 .imgLogo{
   background-color: white;
@@ -67,6 +68,46 @@ header {
   height: fit-content;
   display: inline-flex;
 }
+.hamburger_menu_icon, .hambMenusList {
+  display: none;
+}
+@media screen and (max-width: 992px) {
+  .hamburger_menu_icon {
+    display: block
+  }
+  .header_menus {
+    display: none;
+  }
+  .hambMenusList {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    right: 0;
+    top: 0;
+    background-color: #081051;
+    background: linear-gradient(to right,  #0000005b 0%,#0000005b 30vw,#081051 30vw,#081051 100vw);
+  }
+  .hambMenusList nav {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+  }
+  .hambMenusList nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+  }
+  .hambMenusList nav ul li {
+    line-height: 2.5rem;
+    text-align: end;
+    padding-right: 1rem;
+  }
+  .hambMenusList nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+}
 
 /* FOOTER */
 footer {
@@ -98,4 +139,9 @@ footer .footer_icones{
   width: 2rem;
   height: 2rem;
   margin-right: 1rem;
+}
+@media screen and (max-width: 992px) {
+  footer {
+    padding: 32px 16px 32px 16px;
+  }
 }
