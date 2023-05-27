@@ -145,3 +145,36 @@ footer .footer_icones{
     padding: 32px 16px 32px 16px;
   }
 }
+
+.mainTitle{
+  background-image: url('../images/sunset-moutain.jpg');
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-position: center;
+}
+.bigTitle, .subTitle {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 700;
+}
+.bigTitle {
+  font-size: 35vw;
+  line-height: 85%;
+  margin: 0;
+  letter-spacing: -0.04em;
+}
+.subTitle {
+  font-size: 18vw;
+  line-height: 95%;
+  /* identical to box height, or 100% */
+  letter-spacing: -0.04em;
+}
+@media screen and (max-width: 992px) {
+  .bigTitle {
+    line-height: 14vh;
+  }
+  .subTitle {
+    line-height: 12vh;
+  }
+}
