@@ -27,7 +27,7 @@ header {
   padding: 1rem 0;
   justify-content: space-between;
 }
-.imgLogo{
+.img_logo{
   background-color: white;
   width: 12rem;
   height: 4rem;
@@ -68,7 +68,7 @@ header {
   height: fit-content;
   display: inline-flex;
 }
-.hamburger_menu_icon, .hambMenusList {
+.hamburger_menu_icon, .hamb_menus_list {
   display: none;
 }
 @media screen and (max-width: 992px) {
@@ -78,7 +78,7 @@ header {
   .header_menus {
     display: none;
   }
-  .hambMenusList {
+  .hamb_menus_list {
     position: absolute;
     width: 100vw;
     height: 100vh;
@@ -87,22 +87,22 @@ header {
     background-color: #081051;
     background: linear-gradient(to right,  #0000005b 0%,#0000005b 30vw,#081051 30vw,#081051 100vw);
   }
-  .hambMenusList nav {
+  .hamb_menus_list nav {
     list-style: none;
     display: flex;
     flex-direction: column;
   }
-  .hambMenusList nav ul {
+  .hamb_menus_list nav ul {
     list-style: none;
     display: flex;
     flex-direction: column;
   }
-  .hambMenusList nav ul li {
+  .hamb_menus_list nav ul li {
     line-height: 2.5rem;
     text-align: end;
     padding-right: 1rem;
   }
-  .hambMenusList nav ul li a {
+  .hamb_menus_list nav ul li a {
     color: white;
     text-decoration: none;
     font-size: 1.5rem;
@@ -146,35 +146,47 @@ footer .footer_icones{
   }
 }
 
-.mainTitle{
+.main_title{
   background-image: url('../images/sunset-mountain.jpg');
   background-repeat: no-repeat;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-position: center;
+  background-size: cover;
 }
-.bigTitle, .subTitle {
+.big_title, .sub_title {
   font-family: 'Oswald';
   font-style: normal;
   font-weight: 700;
 }
-.bigTitle {
+.big_title {
   font-size: 35vw;
   line-height: 85%;
   margin: 0;
   letter-spacing: -0.04em;
 }
-.subTitle {
+.sub_title {
   font-size: 18vw;
   line-height: 95%;
   /* identical to box height, or 100% */
   letter-spacing: -0.04em;
 }
 @media screen and (max-width: 992px) {
-  .bigTitle {
+  .big_title {
     line-height: 14vh;
   }
-  .subTitle {
+  .sub_title {
     line-height: 12vh;
   }
+}
+
+/* Tresor path Line */
+.tresor_path {
+  display: flex;
+  position: relative;
+  width: fit-content;
+  height: fit-content;
+}
+.tresor_path img {
+  max-width: 100%;
 }
