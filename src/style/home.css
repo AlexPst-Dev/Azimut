@@ -1,0 +1,185 @@
+/* BODY */
+.main_title {
+    background-image: url("../images/sunset-mountain.jpg");
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-position: center;
+    background-size: cover;
+  }
+  .big_title,
+  .sub_title {
+    font-family: "Oswald";
+    font-style: normal;
+    font-weight: 700;
+  }
+  .big_title {
+    font-size: 35vw;
+    line-height: 85%;
+    margin: 0;
+    letter-spacing: -0.04em;
+  }
+  .sub_title {
+    font-size: 22vw;
+    line-height: 95%;
+    letter-spacing: -0.04em;
+  }
+  @media screen and (max-width: 992px) {
+    .big_title {
+      line-height: 14vh;
+    }
+    .sub_title {
+      line-height: 12vh;
+    }
+  }
+  
+  /* Tresor path Line */
+  .tresor_path {
+    display: flex;
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+  }
+  .tresor_path img {
+    max-width: 100%;
+  }
+  
+  /* Human values */
+  .human_values {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-top: 8rem;
+    margin-bottom: 5.75rem;
+  }
+  .human_values span {
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-break: loose;
+  }
+  @media screen and (max-width: 992px) {
+    .human_values {
+      overflow-x: scroll;
+      margin-top: 2rem;
+      justify-content: unset;
+    }
+  }
+  
+  .section {
+    display: flex;
+    margin: 5.75rem 12.5%;
+  }
+  .section h2 {
+    margin: 0;
+    font-size: 40px;
+    text-transform: uppercase;
+  }
+
+  .paragraphe p {
+    font-size: 20px;
+  }
+  
+  /* Kesako */
+  .txt_left_section .left_part {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-right: 2rem;
+  }
+  .kesako_img {
+    width: 31.25rem;
+    height: 28rem;
+  }
+  @media screen and (max-width: 1324px) {
+    .txt_left_section {
+      flex-direction: column;
+      margin: 4rem 1rem;
+    }
+    .txt_left_section .left_part {
+      padding-right: 0;
+    }
+  }
+  
+  /* Gallery */
+  .gallery_section {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .gallery_section img {
+    object-fit: contain;
+  }
+  .gallery_top_left, .gallery_top_right, .gallery_bottom {
+    display: flex;
+  }
+  .gallery_top {
+    display: flex;
+    flex-direction: row;
+  }
+  .gallery_top_left, .gallery_top_right {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .gallery_top_left {
+    width: 62.63%;
+    margin-right: auto;
+  }
+  .gallery_top_right {
+    width: 35.13%;
+  }
+  .gallery_bottom {
+    justify-content: space-between;
+  }
+  .img_fifth {
+    height: 25%;
+  }
+  .img_seven {
+    width: 31.38%;
+    margin-right: auto;
+  }
+  .img_eight {
+    width: 66.38%;
+  }
+
+  /* Partenaires */
+  .partners_section {
+   flex-direction: column;
+  }
+
+  .partners_section h2 {
+    margin-bottom: 2rem;
+   }
+
+  .list_partners {
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+    height: 200px;
+  }
+
+  .list_partners img {
+    width: fit-content;
+    max-height: 200px;
+  }
+
+  .become_partner {
+    width: 200px;
+    height: 200px;
+    border: 1px dashed white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .become_partner span {
+    font-size: 40px;
+  }
+
+
+  /* Presse */
+  .txt_left_section .left_part{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-right: 2rem;
+  }
