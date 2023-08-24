@@ -1,9 +1,15 @@
+/* Variables */
+:root {
+  --main-bg-color: #081051;
+  --salmon-color: #ffc7b6;
+}
+
 /* GLOBAL */
 html {
   height: 100%;
 }
 body {
-  background-color: #081051;
+  background-color: var(--main-bg-color);
   color: white;
   margin: 0;
   display: flex;
@@ -32,14 +38,14 @@ button {
   font-size: 20px;
 }
 .btn_goTo:hover {
-  background-color: #ffc7b6;
-  color: #081051;
-  border: 0.75px solid #ffc7b6;
+  background-color: var(--salmon-color);
+  color: var(--main-bg-color);
+  border: 0.75px solid var(--salmon-color);
 }
 
 /* Alternative color */
 .salmon {
-  color: #ffc7b6;
+  color: var(--salmon-color);
   font-weight: bold;
 }
 
@@ -102,6 +108,7 @@ header {
 @media screen and (max-width: 992px) {
   .hamburger_menu_icon {
     display: block;
+    cursor: pointer;
   }
   .header_menus {
     display: none;
@@ -112,7 +119,7 @@ header {
     height: 100vh;
     right: 0;
     top: 0;
-    background-color: #081051;
+    background-color: var(--main-bg-color);
     background: linear-gradient(
       to right,
       #0000005b 0%,
@@ -120,6 +127,7 @@ header {
       #081051 30vw,
       #081051 100vw
     );
+    z-index: 99;
   }
   .hamb_menus_list nav {
     list-style: none;
@@ -147,7 +155,7 @@ header {
 footer {
   margin: auto 0 0 0;
   padding: 32px 240px 64px 240px;
-  background-color: #081021;
+  background-color: var(--main-bg-color);
 }
 footer .footer_lists {
   display: flex;

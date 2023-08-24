@@ -5,8 +5,8 @@ function goToAccueil() {
 
 // Functions for Hamburger Menus on mobile
 function showHamburgerMenus(){
-    document.getElementsByClassName('hambMenusList')[0].style.display = 'block'
+    document.getElementsByClassName('hamb_menus_list')[0].style.display = 'block'
 }
 function hideHamburgerMenus(){
-    document.getElementsByClassName('hambMenusList')[0].style.display = 'none'
+    document.getElementsByClassName('hamb_menus_list')[0].style.display = 'none'
 }

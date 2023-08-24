@@ -84,14 +84,24 @@
   .paragraphe p {
     font-size: 20px;
   }
-  
-  /* Kesako */
+
   .txt_left_section .left_part {
     display: flex;
     flex-direction: column;
     gap: 1rem;
     padding-right: 2rem;
   }
+  @media screen and (max-width: 1324px) {
+    .txt_left_section {
+      flex-direction: column;
+      margin: 4rem 1rem;
+    }
+    .txt_left_section .left_part {
+      padding-right: 0 !important;
+    }
+  }
+  
+  /* Kesako */
   .kesako_img {
     width: 31.25rem;
     height: 28rem;
@@ -99,13 +109,6 @@
   @media screen and (max-width: 1324px) {
     .kesako_section {
       gap: 1rem;
-    }
-    .txt_left_section {
-      flex-direction: column;
-      margin: 4rem 1rem;
-    }
-    .txt_left_section .left_part {
-      padding-right: 0 !important;
     }
     .kesako_img {
       width: 100%;
@@ -264,13 +267,6 @@
   }
 
   /* Presse */
-  .txt_left_section .left_part{
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    padding-right: 2rem;
-  }
-
   @media screen and (max-width: 992px) {
     .presse_section {
       gap: 1rem;
